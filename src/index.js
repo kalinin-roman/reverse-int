@@ -1,9 +1,5 @@
 module.exports = function reverse (n) {
-    let x = n;
-    let y = 0;
-    for(; x; x = Math.floor(x / 10)) {
-        y *= 10;
-        y += x % 10;
-    }
-    return y
+    const string = Math.abs(n);
+    const result = string.toString().split('').reverse().join('');
+    return result;
 }
